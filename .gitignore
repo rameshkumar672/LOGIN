@@ -1,0 +1,43 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+backend/venv/
+backend/.venv/
+backend/.env
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build folders
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage
+coverage/
+
+# Package lock (optional)
+package-lock.json
+
+# Vercel
+.vercel/
+
+# Python cache
+__pycache__/
+*.pyc
