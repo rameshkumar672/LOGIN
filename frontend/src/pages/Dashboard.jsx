@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import apiClient from '../config/api';
 
 const Dashboard = () => {
   const [user, setUser] = useState(null);
@@ -23,7 +23,7 @@ const Dashboard = () => {
             Authorization: `Bearer ${token}`
           }
         };
-        const response = await axios.get('http://localhost:5001/api/auth/me', config);
+        const response = await apiClient.get('/api/auth/me', config);
         setUser(response.data);
       } catch (err) {
         setError('Failed to fetch user data. Session may have expired.');
